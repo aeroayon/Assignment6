@@ -1,0 +1,448 @@
+/* ------------------ Reset ------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f0f8f5;
+  color: #222;
+}
+
+/* ------------------ Navbar ------------------ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #065f46;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background:  #FFFF00
+  color: yellow;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background:  #FFFF00
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 3rem 2rem;
+  background: #1ac41a 
+  color: white;
+}
+
+.banner-left img,
+.banner-right img {
+  width: 150px; 
+  height: auto;
+  border-radius: 10px;
+}
+
+.banner-center {
+  text-align: center;
+  max-width: 500px;
+}
+
+.banner-center h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.banner-center p {
+  margin-bottom: 1rem;
+}
+
+
+/* ------------------ Section Title ------------------ */
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem;
+  font-weight: bold;
+}
+
+/* ------------------ Tree Layout ------------------ */
+.tree-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr 250px;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+/* ------------------ Categories ------------------ */
+.categories {
+  background: #f0fdf4;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.categories h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.categories ul {
+  list-style: none;
+}
+
+.categories li {
+  padding: 0.6rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.categories li:hover,
+.categories li.active {
+  background: #10b981;
+  color: white;
+  font-weight: bold;
+}
+
+/* ------------------ Plant Cards ------------------ */
+.plants-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Desktop 3 columns */
+  gap: 1.5rem;
+}
+
+.plant-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.plant-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.plant-card h4 {
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+.plant-card p {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.category-tag {
+  display: inline-block;
+  background: #dcfce7;
+  color: #065f46;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.plant-card .btn-primary {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+/* ------------------ Cart ------------------ */
+.cart {
+  background: #f0fdf4;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.cart h3 {
+  margin-bottom: 1rem;
+}
+
+#cart-list {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+#cart-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ecfdf5;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.cart-total {
+  font-size: 1rem;
+  text-align: right;
+}
+
+/* ------------------ About Section ------------------ */
+.about {
+  display: flex;
+  align-items: center;
+  padding: 3rem 2rem;
+  gap: 2rem;
+}
+
+.about img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+/* ------------------ Impact Section ------------------ */ 
+.impact { display: flex;
+   justify-content: center; 
+   gap: 2rem; background: #d1fae5;
+    padding: 2rem; } 
+.impact-card 
+{ background: white;
+   padding: 1.5rem; border-radius: 8px;
+    text-align: center; width: 200px;
+     box-shadow: 0 2px 5px rgba(0,0,0,0.1); } 
+.impact-card h3 
+{ color: #065f46; }
+
+
+/* ------------------ Form Section ------------------ */
+.form-section {
+  background: #065f46;
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+.form-section input {
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: none;
+}
+
+/* ------------------ Footer ------------------ */
+footer {
+  background: #022c22;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* ------------------ Modal Styles ------------------ */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: white;
+  margin: 5% auto;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* ------------------ Mobile Responsiveness (≤768px) ------------------ */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  
+  .menu {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  
+  .btn-primary {
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .banner-left img,
+  .banner-right img {
+    width: 100px;
+  }
+
+  .banner-center h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner-center p {
+    font-size: 1rem;
+  }
+}
+
+
+  /* Tree Section */
+  .tree-layout {
+    grid-template-columns: 1fr; /* Stack on mobile */
+  }
+
+  .categories,
+  .cart {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  /* About Section */
+  .about {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  /* Impact Section */
+  .impact {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .impact-card {
+    width: 80%;
+  }
+
+  /* Form Section */
+  .form-section form {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  /* Modal */
+  .modal-content {
+    width: 90%;
+    margin: 10% auto;
+    padding: 1rem;
+  }
+
+  .modal-content img {
+    height: 150px;
+  }
+}
+
+/* ------------------ Spinner ------------------ */
+.plants {
+  position: relative; 
+
+.spinner {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #10b981;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  z-index: 50;
+}
+
+@keyframes spin {
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+
+.plants.loading .spinner { display: block; }
+.plants.loading .plants-grid {
+  opacity: 0.4;
+  pointer-events: none;
+}

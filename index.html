@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenEarth - Plant a Tree</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">🌱 GreenEarth</div>
+    <ul class="menu">
+      <li><a href="#">About</a></li>  
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Plant a Tree</a></li>
+    </ul>
+    <button class="btn-primary">Plant a Tree</button>
+  </nav>
+
+  <section class="banner">
+  <div class="banner-left">
+    <img src="photos/hero-leaf1.png"Left Banner" />
+  </div>
+  <div class="banner-center">
+    <h1>Plant a Tree,Grow a Future  </h1>
+    <p>join our mission to plant 1 millions trees and make the earth greener for Future
+      generations.
+    </p>
+    <button class="btn-primary">Get Involved</button>
+  </div>
+  <div class="banner-right">
+    <img src="photos/hero-leaf2.png" alt="Right Banner" />
+  </div>
+</section>
+
+  <!-- Choose Your Trees -->
+  <section class="choose-trees">
+    <h2 class="section-title">Choose Your Trees</h2>
+    <div class="tree-layout">
+
+      <!-- Categories -->
+      <aside class="categories">
+        <h3>Categories</h3>
+        <ul id="categories-list"></ul>
+      </aside>
+
+     <!-- Plant Cards -->
+<div class="plants">
+  <!-- Spinner (ADD THIS) -->
+  <div id="spinner" class="spinner" aria-hidden="true"></div>
+
+  <div id="plants-list" class="plants-grid"></div>
+</div>
+
+
+      <!-- Cart -->
+      <aside class="cart">
+        <h3>Your Cart</h3>
+        <ul id="cart-list"></ul>
+        <div class="cart-total">
+          <strong>Total:</strong> <span id="cart-total">৳0</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+<!-- About Campaign -->
+
+<section class="about" style="display: flex; align-items: center; gap: 2rem; padding: 2rem; background-color: #f5fff5;">
+  
+  <!-- Left Image -->
+  <div class="about-img" style="flex: 1; text-align: center;">
+    <img src="photos/about.png" alt="Plant" style="max-width: 100%; border-radius: 8px;" />
+  </div>
+    
+  <!-- Right Text -->
+  <div class="about-text" style="flex: 1;">
+     <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 1rem; text-align: center;">
+      About the Campaign
+    </h2>
+    <p style="font-size: 1rem; line-height: 1.6; margin-bottom: 1rem;">
+      Green Earth is a global tree plantation initiative dedicated to fighting climate change. 
+      Since our start, we've planted over 500,000 trees worldwide. By joining our campaign, 
+      you help restore forests, create habitats for wildlife, and combat global warming.
+    </p>
+    <ul style="list-style-type: disc; padding-left: 1.5rem; line-height: 1.8;">
+      <li>Restoration of natural habitats</li>
+      <li>Improvement of air quality</li>
+      <li>Support for local communities</li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+  <!-- Our Impact --> <section class="impact"> 
+    <div class="impact-card"> <h3>500K+</h3> 
+      <p>Trees Planted</p> </div>
+       <div class="impact-card"> 
+        <h3>120+</h3> <p>Communities Involved</p> </div>
+         <div class="impact-card">
+           <h3>30+</h3><p>Countries Reached</p>
+           </div> 
+          </section>
+
+<!-- Tree Planting Form -->
+<section class="form-section">
+  <h2 class="form-title">Plant a Tree Today</h2>
+  <form id="tree-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email Address" required>
+    <input type="number" placeholder="Number of Trees" required>
+    <button type="submit" class="btn-primary">Donate now</button>
+  </form>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 GreenEarth. All Rights Reserved.</p>
+  </footer>
+ 
+<!-- Tree Details Modal -->
+<div id="tree-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <img id="modal-img" src="" alt="Tree Image">
+    <h3 id="modal-name"></h3>
+    <p id="modal-category"></p>
+    <p id="modal-description"></p>
+    <div class="price" id="modal-price"></div>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
